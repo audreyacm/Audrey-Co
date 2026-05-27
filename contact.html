@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Audrey&Co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Audrey&Co</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="auth.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-header" style="text-align: center; padding: 3rem 1rem 1rem;">
+            <h1>Get in Touch</h1>
+            <p>Have questions about our plushies? We'd love to hear from you!</p>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Our Workshop</h2>
+                <p>We craft all of our cuddly soft toys by hand in our little workspace. If you have questions about custom orders, shipping times, or bulk purchases, drop us a line!</p>
+                
+                <div class="info-details">
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <span>123 Fluffy Lane, Cuddle Town, CT 56789</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">✉️</span>
+                        <span>hello@audrey&co.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🕘</span>
+                        <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Send a Message</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="What are you writing about?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Audrey&Co. Handcrafted with love.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        const contactForm = document.getElementById("contact-form");
+
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+
+            alert("Thank you, " + name + "! Your message has been sent successfully. 🐰");
+
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>

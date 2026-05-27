@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Collection | Audrey&Co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Audrey&Co</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="auth.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-header">
+            <h1>Our Store Collection</h1>
+            <p>Find the perfect handcrafted companion to bring home today.</p>
+        </section>
+
+        <div class="shop-controls">
+            <div class="search-box">
+                <!-- Visual search bar -->
+                <input type="text" id="search-input" placeholder="Search plushies...">
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Bunnies</button>
+                <button class="filter-btn">Bears</button>
+                <button class="filter-btn">Forest Friends</button>
+            </div>
+
+            <div class="sort-box">
+                <select id="sort-select">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="container" style="padding-top: 0;">
+            <div class="product-grid" id="product-list">
+                
+                <div class="product-card" 
+                     data-name="Bashful Bunny" 
+                     data-price="$25.00" 
+                     data-image="assets/4.webp" 
+                     data-description="An incredibly soft bunny with long floppy ears, perfect for bedtime cuddles and secrets. Crafted from premium, baby-safe plush materials.">
+                    <img src="assets/4.webp" alt="Bashful Bunny">
+                    <div class="card-body">
+                        <div>
+                            <h3>Bashful Bunny</h3>
+                            <p class="price">$25.00</p>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                            <button class="btn direct-add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" 
+                     data-name="Shamrock" 
+                     data-price="$28.00" 
+                     data-image="assets/3.jpg" 
+                     data-description="A classic, heirloom-quality Shamrock with a nostalgic feel and super huggable stuffing. Featuring a timeless hand-embroidered nose and warm, friendly safety eyes.">
+                    <img src="assets/3.jpg" alt="Shamrock">
+                    <div class="card-body">
+                        <div>
+                            <h3>Shamrock</h3>
+                            <p class="price">$28.00</p>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                            <button class="btn direct-add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" 
+                     data-name="Ellie Penguin" 
+                     data-price="$28.00" 
+                     data-image="assets/5.jpg" 
+                     data-description="With her large velvety ears and gentle smile, Ellie is ready to embark on big imaginative adventures. Features gently weighted feet to help her sit upright on bookshelves.">
+                    <img src="assets/5.jpg" alt="Ellie Penguin">
+                    <div class="card-body">
+                        <div>
+                            <h3>Ellie Penguin</h3>
+                            <p class="price">$28.00</p>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                            <button class="btn direct-add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" 
+                     data-name="Croissant" 
+                     data-price="$32.00" 
+                     data-image="assets/6.jpg" 
+                     data-description="This cute little Croissant has extra soft fuzzy ears and sits holding a tiny plush eucalyptus leaf. Made with plush padding designed for cozy afternoon naps.">
+                    <img src="assets/6.jpg" alt="Croissant">
+                    <div class="card-body">
+                        <div>
+                            <h3>Croissant</h3>
+                            <p class="price">$32.00</p>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                            <button class="btn direct-add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" 
+                     data-name="Lilac Bunny" 
+                     data-price="$26.00" 
+                     data-image="assets/8.webp" 
+                     data-description="A lovely lavender-tinted variation of our best-selling bunny. Features the same luxurious feel, soft floppy ears, and a charming pastel coloring that lights up any nursery.">
+                    <img src="assets/8.webp" alt="Lilac Bunny">
+                    <div class="card-body">
+                        <div>
+                            <h3>Lilac Bunny</h3>
+                            <p class="price">$26.00</p>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                            <button class="btn direct-add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" 
+                     data-name="Honey Bear" 
+                     data-price="$35.00" 
+                     data-image="assets/18.jpg" 
+                     data-description="A sweet honey-colored bear that is double stuffed for extra-large squeezes. He wears a tiny red velvet ribbon around his neck, making him the ultimate gift choice.">
+                    <img src="assets/18.jpg" alt="Honey Bear">
+                    <div class="card-body">
+                        <div>
+                            <h3>Honey Bear</h3>
+                            <p class="price">$35.00</p>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary quick-view-btn">Quick View</button>
+                            <button class="btn direct-add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="quick-view-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-img-container">
+                    <img id="modal-image" src="" alt="">
+                </div>
+                <div class="modal-info-container">
+                    <h2 id="modal-title">Product Name</h2>
+                    <div class="modal-price" id="modal-price">$0.00</div>
+                    <p class="modal-description" id="modal-description">Product description goes here.</p>
+                    <button class="btn" id="add-to-cart-btn" style="width: 100%; border: none; cursor: pointer;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="cart-toast">
+        <span>🐰</span>
+        <span id="toast-message">Added to cart!</span>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Audrey&Co. Handcrafted with love.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        const modal = document.getElementById("quick-view-modal");
+        const modalImage = document.getElementById("modal-image");
+        const modalTitle = document.getElementById("modal-title");
+        const modalPrice = document.getElementById("modal-price");
+        const modalDescription = document.getElementById("modal-description");
+        const toast = document.getElementById("cart-toast");
+        const toastMessage = document.getElementById("toast-message");
+
+        document.querySelectorAll(".quick-view-btn, .product-card img").forEach(element => {
+            element.addEventListener("click", () => {
+                const card = element.closest(".product-card");
+                const name = card.getAttribute("data-name");
+                const price = card.getAttribute("data-price");
+                const image = card.getAttribute("data-image");
+                const description = card.getAttribute("data-description");
+
+                modalTitle.innerText = name;
+                modalPrice.innerText = price;
+                modalImage.src = image;
+                modalImage.alt = name;
+                modalDescription.innerText = description;
+
+                modal.classList.add("show");
+                document.body.style.overflow = "hidden";
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove("show");
+            document.body.style.overflow = "auto"; // Re-enable scroll
+        }
+
+        document.getElementById("close-modal-btn").addEventListener("click", closeModal);
+
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        function showToastNotification(message) {
+            toastMessage.innerText = message;
+            toast.classList.add("show");
+            
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 3000);
+        }
+
+        document.getElementById("add-to-cart-btn").addEventListener("click", () => {
+            showToastNotification(`Added 1x ${modalTitle.innerText} to cart! 🐰`);
+            closeModal();
+        });
+
+        document.querySelectorAll(".direct-add-btn").forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                e.stopPropagation(); // Prevent opening the modal
+                const card = btn.closest(".product-card");
+                const name = card.getAttribute("data-name");
+                showToastNotification(`Added 1x ${name} to cart! 🐰`);
+            });
+        });
+
+        document.querySelectorAll(".filter-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* Auth Page Specific Styles */
+
+.auth-container {
+    max-width: 650px;
+    margin: 4rem auto;
+    padding: 0 5%;
+}
+
+.auth-card {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.auth-card h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.form-group input {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    font-family: var(--font-main);
+    outline: none;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(255, 154, 158, 0.2);
+}
+
+.auth-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.auth-toggle {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.auth-toggle a {
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-toggle a:hover {
+    text-decoration: underline;
+}
+
+/* Helper class to hide form elements */
+.hidden {
+    display: none;
+}
+
+/* Active Navigation Link Highlight */
+nav ul li a[href="auth.html"] {
+    color: var(--primary-color);
+    font-weight: bold;
+}

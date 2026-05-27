@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Audrey&Co</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        .about-text {
+            flex: 1;
+        }
+        .about-image {
+            flex: 1;
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Audrey&Co</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="auth.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1 style="text-align: center;">Our Story</h1>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/8.webp" alt="Our Workshop">
+                </div>
+                <div class="about-text">
+                    <h2>Bringing Joy, One Stitch at a Time</h2>
+                    <p>Founded in 2026, Audrey&Co began with a simple mission: to create the world's most huggable companions. Every toy in our collection is designed with love and crafted from the highest quality, sustainable materials.</p>
+                    <p style="margin-top: 1rem;">We believe that a plushie is more than just a toy—it's a friend for life, a source of comfort, and a keepsake that carries memories. Our team of designers works tirelessly to bring whimsical characters to life, ensuring each one has its own unique personality.</p>
+                    <p style="margin-top: 1rem;">Whether you're looking for the perfect gift for a newborn or a quirky addition to your own collection, Audrey&Co is here to deliver magic and softness to your home.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="text-align: center; background: var(--secondary-color); border-radius: 20px; margin: 4rem 0;">
+            <h2>Our Values</h2>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+                <div>
+                    <h3>Quality</h3>
+                    <p>Safety-tested and built to last.</p>
+                </div>
+                <div>
+                    <h3>Softness</h3>
+                    <p>The fluffiest materials we can find.</p>
+                </div>
+                <div>
+                    <h3>Love</h3>
+                    <p>Hand-finished details on every toy.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Audrey&Co. Handcrafted with love.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
